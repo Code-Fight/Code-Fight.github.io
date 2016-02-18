@@ -1,7 +1,375 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>简历</title>
+<meta content="no-siteapp" http-equiv="Cache-Control">
+<meta name="keywords" content="若邻网">
+<meta name="description" content="若邻网">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<!-- page Common css file -->
+
+<link href="http://s2.wealinkcdn.com/pc/css/basic.css?t=56a0537c" rel="stylesheet" type="text/css">
+<link href="http://s2.wealinkcdn.com/pc/css/public.css?t=56a6d4f1" rel="stylesheet" type="text/css"><script>
+    // console.log
+    if(window.console==undefined){
+        window.console={
+            log:function(msg){              
+            }
+        }      
+    }
+
+</script>
+<!-- page Common jquery file -->
+
+<script src="http://s2.wealinkcdn.com/lib/js/jquery/jquery-1.11.3.min.js?t=56a0537c"></script>
+<script src="http://s2.wealinkcdn.com/lib/js/user.agent.js?t=56a0537c"></script>
+<script>
+    //控制ajax 并发请求数量
+    (function(jQuery){
+        var old_ajax= jQuery.ajax;
+        var queue=[]
+        var c=0;
+        var max_c=4;
+        function ajax(arg){
+            var args=[]
+            for(var i=0;i<arguments.length;i++){
+                args.push(arguments[i]);
+            }
+            queue.push(args);
+            setTimeout(run,1);
+        }
+        function run(){
+            c++;
+            if(c>max_c){
+                return ;
+            }
+
+            var t=queue.shift();
+            if(t){
+                old_ajax.apply(jQuery,t).always(function(){
+                    c--;
+                    setTimeout(run,1);
+                })
+            }
+
+        }
+
+        //jQuery.ajax=ajax;
+
+
+    })(jQuery)
+
+</script>
+
+<script src="http://s2.wealinkcdn.com/lib/js/jquery.validate.min.js?t=56a0537c"></script>    
+<link href="http://s2.wealinkcdn.com/pc/css/resume_single.css?t=56a0537c" rel="stylesheet" type="text/css"><script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script></head><body>
+<div class="main resume-single" id="logo">
+    <div class="wrap">
+        <!-- 基本信息 -->
+<div class="resume-ebox1 resume_base_info js_highlight" id="resume_base_info">
+    <!-- 预览 -->
+    <div class="preview_box " id="basic_001">
+
+        <div class="user_head_box">
+            <div class="user_head">
+                <img src="http://img.wealinkcdn.com/user/avatar/6/27/53/zhangfeng6275336_139694676677_208.jpg?imageMogr2/thumbnail/180x180" class="preview_head_img">                <span class="radiushaed"></span>
+            </div>
+        </div>
+        <!-- new start -->
+        <div class="base_info_list">
+            <div class="base-info-tab">
+                <h4 class="fl-left"><span data_name="user_name">张锋</span></h4>
+                <div class="fl-left"><h5>软件工程师</h5>
+                    <p>大连奇辉计算机网络有限公司</p>
+                </div>
+                <span style="display: none;" title="名企经验" class="edit_famous_company famous-icon2">名企</span>
+<span style="display: none;" title="名校学历" class="edit_famous_school famous-icon2">名校</span>                <div class="clear"></div>
+            </div>
+            <ul class="base_info_ullist">
+                                <li class="licel-1"><i class="ico ico-phone-3"></i><span>手机</span>18640803925</li>
+                                                <li class="licel-1"><i class="ico ico-mail-3"></i><span>邮箱</span>97576419@qq.com</li>
+                                                <li class="licel-1"><i class="ico ico-address-2"></i><span>现居地</span>辽宁-大连</li>
+                            </ul>
+            <div class="clear"></div>
+            <ul class="base_info_ullist">
+                                <li class="licel-2"><span>性别：</span>男</li>
+                                                                <li class="licel-2"><span>年龄：</span>24岁</li>
+                                    <li class="licel-2"><span>工作经验：</span>3年</li>
+                                                <li class="licel-2"><span>学历：</span>本科</li>
+                                <li class="licel-2"><span>婚姻状况：</span>已婚</li>
+                                <li class="licel-2"><span>籍贯：</span>山东-潍坊</li>
+                            </ul>
+            <div class="clear"></div>
+            <!-- 自我评价 -->
+            <div class="self_evaluate-box"><i class="ico ico-marks-1"></i>
+                        <span apply_uid="6275336" class="self_evaluate_content">热衷于计算机行业，一直追求技术上的不断进步。自学能力较强，吃苦耐劳，能顶住工作压力。有很强团队合作意识，坚持”1+1 > 2“的观念，并能在团队很好的处理人事关系。独立思考意识强，能够在项目中通过不断实践去更加完善模块的功能和架构。在工作闲暇善于总结工作中一些经验和方法，并利用工作后的休息时间去学习一些新知识以完善自己在工作中的不足。喜欢分享，希望通过自己的想法或建议能够给别人一点点的帮助。</span>
+                <i class="ico ico-marks-2"></i>
+            </div>
+        </div>
+        <!-- new end -->
+    </div>
+</div>
+
+<!-- 求职意向 -->
+<div highlight="true" apply_uid="6275336" class="job-intent resume-ebox2 resume_job_intent js_highlight" id="intent"><div class="preview_box " id="intent_001">
+
+    <div class="resume-title-box">
+        <span class="ico-title-2"><i class="ico ico-intent"></i>求职意向</span>
+    </div>
+    <div class="content-box">
+        <ul class="txt-list1">
+                <li><span class="h6">求职状态：</span>观望,有好的机会我会考虑</li>
+                <li><span class="h6">期望薪资：</span> 面议</li>
+                <li><span class="h6">期望行业：</span> 计算机软件</li>
+                <li><span class="h6">期望地点：</span> 辽宁-大连</li>
+                <li><span class="h6">期望职能：</span> 软件工程师</li>
+                <li><span class="h6">到岗时间：</span> 1月内 </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>
+</div>
+<!-- 工作经历 -->
+<div highlight="true" apply_uid="6275336" class="resume-ebox2 resume_work_list resume-work-data js_highlight" id="resume-work-data"><div class="preview_box ">
+    <div class="resume-title-box">
+        <span class="ico-title-2"><i class="ico ico-work"></i>工作经历</span>
+    </div>
+                    <div class="content-box ">
+                <div class="tips-line"><i></i><s></s></div>
+                <h4 class="date-s1">2014.04-至今</h4>
+                <h4 class="fz-16">大连奇辉计算机网络有限公司</h4>
+                <h5 class="fz-14 mt10">软件工程师<span class="fc-green">[计算机软件 ]</span></h5>
+                                <div class="txt-list1 mt20">
+                    负责项目的模块的功能实现、测试和维护                </div>
+                            </div>
+                    <div class="content-box ">
+                <div class="tips-line"><i></i><s></s></div>
+                <h4 class="date-s1">2011.11-2013.06</h4>
+                <h4 class="fz-16">大连东软Sovo腾翔</h4>
+                <h5 class="fz-14 mt10">项目经理<span class="fc-green">[计算机软件 ]</span></h5>
+                                <div class="txt-list1 mt20">
+                    前期主要负责团队中的技术问题，后来接手带领整个团队，负责团队中的业务交涉以及技术方向把握                </div>
+                            </div>
+        </div>
+</div>
+<!-- 项目经验 -->
+<div highlight="true" class="resume-ebox2 resume_project_list resume-project-data js_highlight" id="resume-project-data" apply_uid="6275336"><div class="preview_box ">
+    <div class="resume-title-box">
+        <span class="ico-title-2"><i class="ico ico-project"></i>项目经验</span>
+    </div>
+            <div class="content-box ">
+            <div class="tips-line"><i></i><s></s></div>
+            <h4 class="date-s1">2012.04-2012.10</h4>
+            <h4 class="fz-16">庄河润滑油网站</h4>
+                        <h5 class="fz-14 mt10">核心技能：,vs2010</h5>
+                                    <h5 class="fz-14 mt10">项目职责：</h5>
+            <div class="txt-list1 mt10">
+                项目描述: 该公司的主要业务是销售润滑油，他们希望能够在线上进行他们的润滑油销售和推广工作。委托我们给他们搭建一个企业网站方便展示他们的产品。后期又加入一个淘宝店的设计、维护和推广的需求，实现在线上销售润滑油。<br>责任描述: 前期负责企业网站的留言薄模块的开发、测试和维护工作，后期参与到淘宝店的设计以及维护和推广中。            </div>
+                    </div>
+            <div class="content-box ">
+            <div class="tips-line"><i></i><s></s></div>
+            <h4 class="date-s1">2012.11-2013.12</h4>
+            <h4 class="fz-16">营销软件开发</h4>
+                        <h5 class="fz-14 mt10">核心技能：,vs2010+易语言</h5>
+                                    <h5 class="fz-14 mt10">项目职责：</h5>
+            <div class="txt-list1 mt10">
+                项目描述: 从威客等网站接一些营销软件的开发，前后开发过许多款的营销软件，客户都非常满意。为一些网络推广团队定制一些营销软件等。<br>1.独立开发过多款营销软件。<br>eg:百度知道营销软件、新浪博客营销软件、QQ营销系统、原创文章生成器等等、和讯博客营销软件、博客群群发系统、DZ论坛批量加好友群发、高权重搜词外链工具等等<br><br>2.OEM过多款市场热门营销软件。<br>eg：阿里妈妈数据采集器，淘宝卖家信息采集器、拍拍买家信息采集器等等<br><br>3.网络推广<br>做过阿里妈妈淘宝客，盈利1W+  知道高权重论坛以及博客，了解基本的软文写作等等<br>责任描述: 根据客户的需求，从需求分析到系统设计，以及后期编码和维护全部独立完成。            </div>
+                    </div>
+            <div class="content-box ">
+            <div class="tips-line"><i></i><s></s></div>
+            <h4 class="date-s1">2014.04-2014.07</h4>
+            <h4 class="fz-16">**客运段安全生产指挥系统</h4>
+                        <h5 class="fz-14 mt10">核心技能：,vs2010、sql2008,win2003、sql2005</h5>
+                                    <h5 class="fz-14 mt10">项目职责：</h5>
+            <div class="txt-list1 mt10">
+                项目描述: 该项目为**等几个火车站开发的生产指挥系统，几乎涵盖火车站上所有的生产指挥信息。<br>责任描述: 独立完成‘ 整备信息管理 ’、‘ 深度保洁管理 ’、‘ 客服信息管理 ’三大模块的开发、调试修改、维护等工作，后期参与到其他几个模块的开发工作中。开发工作完成后，配合现场实施人员对系统进行一定的调整和修改。            </div>
+                    </div>
+            <div class="content-box ">
+            <div class="tips-line"><i></i><s></s></div>
+            <h4 class="date-s1">2014.08-2014.09</h4>
+            <h4 class="fz-16">**货细管理系统</h4>
+                        <h5 class="fz-14 mt10">核心技能：,vs2010+sql2008,win2003、sql2005</h5>
+                                    <h5 class="fz-14 mt10">项目职责：</h5>
+            <div class="txt-list1 mt10">
+                项目描述: 根据现场调研，客户需求整理后如下：<br>1、营业部编写、修改、删除货细<br>2、货运中心修改、提交货细<br>3、路局审批<br>4、审批后货细修改需要解锁<br>5、货细的查询、导出<br>6、货细编写章节固定<br>责任描述: 主要负责“字典管理”、“督办管理”、“通知管理”、“章节管理”等几个模块的开发测试任务            </div>
+                    </div>
+            <div class="content-box ">
+            <div class="tips-line"><i></i><s></s></div>
+            <h4 class="date-s1">2014.09-至今</h4>
+            <h4 class="fz-16">安全生产及旅客服务系统</h4>
+                        <h5 class="fz-14 mt10">核心技能：,vs2012、sql2005,win2008、sql2005</h5>
+                                    <h5 class="fz-14 mt10">项目职责：</h5>
+            <div class="txt-list1 mt10">
+                项目描述: 该生产指挥系统包含四大部分：“旅客服务系统”、“客运端系统”、“手持机”、“触摸屏”，涵盖火车站生产指挥和旅客服务方面的需求<br>责任描述: 主要设计开发整个“触摸屏”部分；<br>客运站系统的“智能排班”、“培训管理”模块的实现和测试；<br>手持机端的整个”webservice“；<br>后期参与到”旅客服务系统“的测试工作和”客运段“的后期维护工作。            </div>
+                    </div>
+            <div class="content-box ">
+            <div class="tips-line"><i></i><s></s></div>
+            <h4 class="date-s1">2015.09-2015.12</h4>
+            <h4 class="fz-16">长春电子信息化系统</h4>
+                        <h5 class="fz-14 mt10">核心技能：vs2012,c#,sqlserver</h5>
+                                    <h5 class="fz-14 mt10">项目职责：</h5>
+            <div class="txt-list1 mt10">
+                负责系统后台模块的开发设计、以及服务器通讯
+<br>详细内容如下：
+<br>1.web端物资管理管理的前后端开发工作。
+<br>2.面部识别考勤机对接以及服务器间通讯传输开发。            </div>
+                    </div>
+            <div class="content-box ">
+            <div class="tips-line"><i></i><s></s></div>
+            <h4 class="date-s1">2016.01-至今</h4>
+            <h4 class="fz-16">**铁路局物流管家系统</h4>
+                        <h5 class="fz-14 mt10">核心技能：extjs,巨杉数据库</h5>
+                                    <h5 class="fz-14 mt10">项目职责：</h5>
+            <div class="txt-list1 mt10">
+                负责企业信息模块的开发工作            </div>
+                    </div>
+    </div>
+</div>
+<!-- 教育经历 -->
+<div highlight="true" class="resume-ebox2 resume_edu_list resume-edu-data js_highlight" id="resume-edu-data" apply_uid="6275336"><div class="preview_box ">
+    <div class="resume-title-box">
+        <span class="ico-title-2"><i class="ico ico-edu"></i>教育经历</span>
+    </div>
+        <div class="content-box ">
+        <div class="tips-line"><i></i><s></s></div>
+        <h4 class="date-s1">2010.08-2014.06</h4>
+        <div class="school-name">大连东软信息学院</div>
+        <ul class="school-info mt10">
+            <li class=""><span>专业名称：</span>软件工程</li>
+            <li class=""><span>学历：</span>本科</li>
+            <li class=""><span>是否统招：</span>统招</li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    </div>
+</div>
+
+<!-- 培训经历 -->
+<div highlight="true" class="resume-ebox2 resume_train_list resume-train-data js_highlight" id="resume-train-data" apply_uid="6275336"></div>
+<!-- 职场技能 -->
+<div highlight="true" class="resume-ebox2 resume_skill_list resume-skill-data js_highlight" id="resume-skill-data" apply_uid="6275336"><div class="preview_box">
+    <div class="resume-title-box">
+        <span class="ico-title-2"><i class="ico ico-skill"></i>职场技能</span>
+    </div>
+    <div class="content-box">
+        <div class="skill-view-list1">
+                            <div class="skill-viewli2 pro_lv2">                    
+                    <h4>HTTP协议模拟+采集+挖掘</h4>
+                    <div class="pro-bar"><span></span></div>
+                    <i>熟练</i>
+                    <div class="clear"></div>
+                </div>
+                            <div class="skill-viewli2 pro_lv1">                    
+                    <h4>Android</h4>
+                    <div class="pro-bar"><span></span></div>
+                    <i>了解</i>
+                    <div class="clear"></div>
+                </div>
+                            <div class="skill-viewli2 pro_lv3">                    
+                    <h4>ajax</h4>
+                    <div class="pro-bar"><span></span></div>
+                    <i>精通</i>
+                    <div class="clear"></div>
+                </div>
+                            <div class="skill-viewli2 pro_lv3">                    
+                    <h4>jQuery</h4>
+                    <div class="pro-bar"><span></span></div>
+                    <i>精通</i>
+                    <div class="clear"></div>
+                </div>
+                            <div class="skill-viewli2 pro_lv2">                    
+                    <h4>HTML+CSS+JS</h4>
+                    <div class="pro-bar"><span></span></div>
+                    <i>熟练</i>
+                    <div class="clear"></div>
+                </div>
+                            <div class="skill-viewli2 pro_lv3">                    
+                    <h4>SQL Server</h4>
+                    <div class="pro-bar"><span></span></div>
+                    <i>精通</i>
+                    <div class="clear"></div>
+                </div>
+                            <div class="skill-viewli2 pro_lv3">                    
+                    <h4>C#</h4>
+                    <div class="pro-bar"><span></span></div>
+                    <i>精通</i>
+                    <div class="clear"></div>
+                </div>
+                            <div class="skill-viewli2 pro_lv2">                    
+                    <h4>C/C++</h4>
+                    <div class="pro-bar"><span></span></div>
+                    <i>熟练</i>
+                    <div class="clear"></div>
+                </div>
+                        <div class="clear"></div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- 荣誉证书 -->
+<div highlight="true" class="resume-ebox2 resume_cert_list resume-cert-data js_highlight" id="resume-cert-data" apply_uid="6275336"><div class="preview_box">
+    <div class="resume-title-box">
+        <span class="ico-title-2"><i class="ico ico-cert"></i>荣誉证书</span>
+    </div>
+            <div class="content-box">
+            <div class="cert-box">
+                <i class="ico ico-certificate-1"></i><span>信息系统项目管理师（高级）</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<!-- 作品展示 -->
+<div highlight="true" class="resume-ebox2 resume_individual_list resume-effort-data js_highlight" id="resume-effort-data" apply_uid="6275336"></div>
+<!-- 自定义 -->
+<div highlight="true" class="resume-ebox2 resume_custom_list resume-custom-data js_highlight" id="resume-custom-data" apply_uid="6275336"><div class="preview_box ">
+    <div class="resume-title-box">
+        <span class="ico-title-2"><i class="ico ico-custom"></i>其他</span>
+    </div>
+            <div class="content-box">
+            <h4 class="fz-16">Github</h4>
+            <div class="txt-list1 mt10">
+                https://github.com/Code-Fight            </div>
+            <div class="clear"></div>
+        </div>
+            <div class="content-box">
+            <h4 class="fz-16">兴趣爱好</h4>
+            <div class="txt-list1 mt10">
+                篮球、轮滑            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var resumeFamous = function(){
+        $(".edit_famous_company").hide();
+        $(".edit_famous_school").hide();
+        var postData = {
+            'uid':"6275336"
+        }
+        $.ajax({
+            url:'/resume/famous/check',
+            data:postData,
+            type:'post',
+            dataType:'json',
+            success:function(data){
+                console.log(data['result']);
+                if (data['result']['work'] == '1') {
+                    $(".edit_famous_company").show();
+                }
+                if (data['result']['edu'] == '1') {
+                    $(".edit_famous_school").show();
+                }
+            }
+        })
+    }
+    $(document).ready(function() {
+        resumeFamous();
+    });
+</script>    </div>
+</div>
+</body><html>
